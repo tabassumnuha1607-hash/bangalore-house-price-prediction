@@ -1,21 +1,18 @@
- Bangalore House Price Prediction using Machine Learning
+# 🏡 Bangalore House Price Prediction using Machine Learning
 
-Project Overview
+## 📌 Project Overview
 
-This project predicts house prices in Bangalore using Machine Learning. Users can enter property details such as area, number of bedrooms, bathrooms, and location through a web interface, and the model estimates the property's price.
-
----
- Features
-
-- House price prediction
-- Interactive web application
-- Machine Learning model using Scikit-learn
-- Flask backend
-- Responsive user interface
+This project predicts house prices in Bangalore using Machine Learning. Users can enter property details such as area, BHK, bathrooms, and location through a web interface, and the trained model estimates the property's price.
 
 ---
 
- Technologies Used
+## 🎯 Problem Statement
+
+Buying or selling a house requires accurate price estimation. This project uses Machine Learning to predict property prices based on different house features.
+
+---
+
+## 🛠️ Technologies Used
 
 - Python
 - Scikit-learn
@@ -29,33 +26,60 @@ This project predicts house prices in Bangalore using Machine Learning. Users ca
 
 ---
 
- Project Structure
+## ⚙️ Features
 
-```text
-├── app.html
-├── app.css
-├── app.js
-├── server.py
-├── util.py
-├── bangalore_home_prices_model.pickle
-├── columns.json
-├── REAL_ESTATE_PRICE_PREDICTION.ipynb
-└── README.md
-```
+✅ House Price Prediction
+
+✅ User-friendly Web Interface
+
+✅ Flask Backend
+
+✅ Machine Learning Model
+
+✅ Responsive Design
 
 ---
-Future Improvements
 
-- Improve prediction accuracy
+## 📂 Project Structure
+
+client/
+server/
+model/
+dataset/
+notebook/
+
+---
+
+## 🚀 How to Run
+
+1. Clone this repository
+
+2. Install the dependencies
+
+pip install -r requirements.txt
+
+3. Run Flask server
+
+python server.py
+
+4. Open app.html
+
+---
+
+## 📊 Future Improvements
+
+- Improve model accuracy
 - Deploy using Render
-- Deploy using AWS
-- Add Google Maps API
-- Improve UI/UX
+- Deploy on AWS
+- Add more datasets
+- Improve UI
 
 ---
 
- Author
+## 👩‍💻 Author
 
 **Tabassum Nuha**
 
 B.Tech Artificial Intelligence & Data Science
+
+LinkedIn:
