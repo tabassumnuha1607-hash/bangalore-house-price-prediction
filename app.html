@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0F0F0F">
+  <title>Astra Estate | Property Valuation</title>
+
+  <!-- Fonts: Playfair Display (editorial serif) + Inter (clean sans) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap">
+
+  <link rel="stylesheet" href="app.css">
+</head>
+
+<body>
+
+  <!-- Full-screen hero photograph (image + overlays are set in app.css) -->
+  <div class="img" aria-hidden="true"></div>
+
+  <div class="stage">
+
+    <!-- ================= Top bar ================= -->
+    <header class="topbar">
+      <a class="brand" href="#" aria-label="Astra Estate home">
+        <svg class="brand-mark" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M12 2l2.2 7.8L22 12l-7.8 2.2L12 22l-2.2-7.8L2 12l7.8-2.2z"/>
+        </svg>
+        <span class="brand-name">Astra <span class="brand-sub">Estate</span></span>
+      </a>
+      <span class="pill">Bangalore &middot; </span>
+    </header>
+
+    <!-- ================= Hero ================= -->
+    <main class="hero">
+
+      <section class="hero-copy">
+        <p class="eyebrow">Intelligent property valuation</p>
+        <h1 class="headline">Discover what your <em>home</em> is worth.</h1>
+        <p class="lede">
+          Astra Estate uses a machine-learning model trained on real Bangalore
+          market data to estimate your property&rsquo;s value in seconds &mdash;
+          just tell us about the space.
+        </p>
+      </section>
+
+      <!-- Result card: app.js writes "<h2>NN.NN Lakh</h2>" into #uiEstimatedPrice -->
+      <aside class="valuation-card" aria-live="polite">
+        <div class="card-head">
+          <p class="card-label">Estimated property value</p>
+          <span class="badge"><i class="dot"></i>Live model</span>
+        </div>
+        <div id="uiEstimatedPrice" class="result"><h2></h2></div>
+        <p class="card-note">Indicative estimate based on Bangalore market patterns.</p>
+      </aside>
+
+    </main>
+
+    <!-- ================= Valuation bar (inputs) ================= -->
+    <section class="form" aria-label="Property details">
+
+      <div class="field field-area">
+        <label class="field-label" for="uiSqft">Area</label>
+        <input class="area" type="text" id="uiSqft" value="1000" inputmode="numeric" autocomplete="off">
+      </div>
+
+      <div class="field">
+        <span class="field-label" id="lblBHK">BHK</span>
+        <div class="switch-field" role="radiogroup" aria-labelledby="lblBHK">
+          <input type="radio" id="radio-bhk-1" name="uiBHK" value="1"/>
+          <label for="radio-bhk-1">1</label>
+          <input type="radio" id="radio-bhk-2" name="uiBHK" value="2" checked/>
+          <label for="radio-bhk-2">2</label>
+          <input type="radio" id="radio-bhk-3" name="uiBHK" value="3"/>
+          <label for="radio-bhk-3">3</label>
+          <input type="radio" id="radio-bhk-4" name="uiBHK" value="4"/>
+          <label for="radio-bhk-4">4</label>
+          <input type="radio" id="radio-bhk-5" name="uiBHK" value="5"/>
+          <label for="radio-bhk-5">5</label>
+        </div>
+      </div>
+
+      <div class="field">
+        <span class="field-label" id="lblBath">Bath</span>
+        <div class="switch-field" role="radiogroup" aria-labelledby="lblBath">
+          <input type="radio" id="radio-bath-1" name="uiBathrooms" value="1"/>
+          <label for="radio-bath-1">1</label>
+          <input type="radio" id="radio-bath-2" name="uiBathrooms" value="2" checked/>
+          <label for="radio-bath-2">2</label>
+          <input type="radio" id="radio-bath-3" name="uiBathrooms" value="3"/>
+          <label for="radio-bath-3">3</label>
+          <input type="radio" id="radio-bath-4" name="uiBathrooms" value="4"/>
+          <label for="radio-bath-4">4</label>
+          <input type="radio" id="radio-bath-5" name="uiBathrooms" value="5"/>
+          <label for="radio-bath-5">5</label>
+        </div>
+      </div>
+
+      <div class="field field-location">
+        <label class="field-label" for="uiLocations">Location</label>
+        <select class="location" id="uiLocations" name="Location">
+          <option value="" disabled="disabled" selected="selected">Choose a Location</option>
+        </select>
+      </div>
+
+      <button class="submit" onclick="onClickedEstimatePrice()" type="button">
+        <span>Estimate Price</span>
+        <svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </button>
+
+    </section>
+
+  </div>
+
+  <!-- Unchanged: jQuery + your existing app.js (Flask API calls live there) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
