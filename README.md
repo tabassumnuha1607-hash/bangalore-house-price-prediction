@@ -1,18 +1,20 @@
-# 🏡 Bangalore House Price Prediction using Machine Learning
+# 🏡 ASTRA ESTATE – Bangalore House Price Prediction using Machine Learning
 
-## 📌 Project Overview
-
-This project predicts house prices in Bangalore using Machine Learning. Users can enter property details such as area, BHK, bathrooms, and location through a web interface, and the trained model estimates the property's price.
+An end-to-end Machine Learning web application that predicts house prices in Bangalore based on property features such as location, area, BHK (bedrooms), and bathrooms.
 
 ---
 
-## 🎯 Problem Statement
+## 📌 Features
 
-Buying or selling a house requires accurate price estimation. This project uses Machine Learning to predict property prices based on different house features.
+- 🏠 Predict Bangalore house prices
+- 🤖 Machine Learning model using Scikit-learn
+- 🌐 Flask backend API
+- 🎨 Modern responsive web interface
+- 📊 Trained on Bangalore housing dataset
 
 ---
 
-## 🛠️ Technologies Used
+## 🛠 Tech Stack
 
 - Python
 - Scikit-learn
@@ -26,53 +28,42 @@ Buying or selling a house requires accurate price estimation. This project uses 
 
 ---
 
-## ⚙️ Features
+## 📷 Project Screenshots
 
-✅ House Price Prediction
+### Home Page
 
-✅ User-friendly Web Interface
+![Home Page](Screenshot%202026-10-04%20160921.png)
 
-✅ Flask Backend
+### Backend
 
-✅ Machine Learning Model
+![Backend](Screenshot%202026-10-04%20161245.png)
 
-✅ Responsive Design
+### Model Training
 
----
+![Training](Screenshot%202026-10-04%20161526.png)
 
-## 📂 Project Structure
+### Algorithm Comparison
 
-client/
-server/
-model/
-dataset/
-notebook/
+![Comparison](Screenshot%202026-10-04%20161305.png)
 
 ---
 
-## 🚀 How to Run
+## 📂 Project Files
 
-1. Clone this repository
-
-2. Install the dependencies
-
-pip install -r requirements.txt
-
-3. Run Flask server
-
-python server.py
-
-4. Open app.html
+- Machine Learning Notebook
+- Trained Model (.pickle)
+- Flask Backend
+- HTML, CSS & JavaScript Frontend
+- JSON Configuration
 
 ---
 
-## 📊 Future Improvements
+## 🚀 Future Improvements
 
+- Deploy the application online
 - Improve model accuracy
-- Deploy using Render
-- Deploy on AWS
-- Add more datasets
-- Improve UI
+- Add more cities
+- Enhance the user interface
 
 ---
 
@@ -82,4 +73,5 @@ python server.py
 
 B.Tech Artificial Intelligence & Data Science
 
-LinkedIn:
+🔗 LinkedIn:
+https://www.linkedin.com/in/tabassum-nuha-s-a-809768308
